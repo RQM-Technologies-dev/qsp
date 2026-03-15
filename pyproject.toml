@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qsp"
+version = "0.1.0"
+description = "Meta-package for the RQM Technologies Quaternionic Signal Processing ecosystem"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "RQM Technologies" }
+]
+dependencies = [
+  "qsp-core>=0.1.0",
+  "qsp-fft>=0.1.2",
+  "qsp-filter>=0.1.0",
+  "qsp-modulation>=0.1.0",
+  "qsp-orientation>=0.1.1"
+]
+
+[tool.setuptools]
+py-modules = []
